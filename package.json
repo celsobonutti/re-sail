@@ -1,6 +1,6 @@
 {
   "name": "re-sail",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A simple navigation created for reason-react-native. Uses Variants for routing.",
   "main": "index.js",
   "scripts": {
