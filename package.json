@@ -1,0 +1,26 @@
+{
+  "name": "re-sail",
+  "version": "0.0.1",
+  "description": "A simple navigation created for reason-react-native. Uses Variants for routing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CelsoBonutti/re-sail.git"
+  },
+  "keywords": [
+    "navigation",
+    "reasonml",
+    "bucklescript",
+    "react-native",
+    "reason-react-native"
+  ],
+  "author": "Celso Bonutti Filho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CelsoBonutti/re-sail/issues"
+  },
+  "homepage": "https://github.com/CelsoBonutti/re-sail#readme"
+}
