@@ -1,7 +1,7 @@
 {
   "name": "re-sail",
   "version": "0.1.0",
-  "description": "A simple navigation created for reason-react-native. Uses Variants for routing.",
+  "description": "A simple variant-based navigation lib created for reason-react-native.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
