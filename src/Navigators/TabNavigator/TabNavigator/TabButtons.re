@@ -1,7 +1,7 @@
 open ReactNative;
 
 [@react.component]
-let make = (~numberOfTabs, ~scrollViewRef) => {
+let make = (~tabs : list(Route.t), ~scrollViewRef) => {
   let width = Dimensions.get(`screen).width;
 
   let styles =
@@ -14,7 +14,7 @@ let make = (~numberOfTabs, ~scrollViewRef) => {
 
   <View style=Style.(style(~width=100.->pct, ~flexDirection=`row, ()))>
     {{
-       numberOfTabs->Belt_Array.makeBy(index =>
+       tabs->Belt.List.mapWithIndex((index, element) =>
          <TouchableOpacity
            style=styles##button
            onPress={_ => {
@@ -33,11 +33,12 @@ let make = (~numberOfTabs, ~scrollViewRef) => {
              };
            }}>
            <Text style=styles##text>
-             {index->string_of_int->React.string}
+             {element.title->React.string}
            </Text>
          </TouchableOpacity>
        );
      }
+     ->Array.of_list
      ->React.array}
   </View>;
 };

@@ -1,7 +1,7 @@
 open ReactNative;
 
 [@react.component]
-let make = (~tabs: list(React.element)) => {
+let make = (~tabs: list(Route.t)) => {
   let dimensions = Dimensions.useWindowDimensions();
   let scrollViewRef = React.useRef(Js.Nullable.null);
 
@@ -24,13 +24,13 @@ let make = (~tabs: list(React.element)) => {
          ->Belt_List.map(element =>
              <View
                key={"tab_" ++ Random.bits()->string_of_int} style=styles##page>
-               element
+               element.component
              </View>
            )
          ->Array.of_list
          ->React.array}
       </View>
     </ScrollView>
-    <TabButtons numberOfTabs={tabs->List.length} scrollViewRef />
+    <TabButtons tabs scrollViewRef />
   </View>;
 };

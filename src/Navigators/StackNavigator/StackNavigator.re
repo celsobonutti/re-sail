@@ -49,7 +49,7 @@ module Navigator = {
                let route = renderFunction(routeVariant);
                let display = index == 0 ? `flex : `none;
                <View style=Style.(style(~display, ()))>
-                 {route.element}
+                 {route.component}
                </View>;
              })
            ->Array.of_list

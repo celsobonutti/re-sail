@@ -1,4 +1,4 @@
 type t = {
-  element: React.element,
+  component: React.element,
   title: string,
 }
