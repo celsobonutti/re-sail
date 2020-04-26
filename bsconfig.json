@@ -5,7 +5,8 @@
   "sources": [
     {
       "dir": "src",
-      "subdirs": true
+      "subdirs": true,
+      "public": ["ReSail"]
     }
   ],
   "package-specs": [
@@ -15,7 +16,6 @@
     }
   ],
   "suffix": ".bs.js",
-  "namespace": true,
   "bs-dependencies": [
     "reason-react",
     "reason-react-native"
