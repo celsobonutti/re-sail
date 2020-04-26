@@ -1,8 +1,8 @@
 Arguments: 
-  /Users/celsobonutti/.fnm/node-versions/v10.19.0/installation/bin/node /var/folders/6y/_zsxmyz12rx9yy7_6jznyyjw0000gn/T/fnm-shell-5692534/bin/yarn publish
+  /Users/celsobonutti/.fnm/node-versions/v10.19.0/installation/bin/node /var/folders/6y/_zsxmyz12rx9yy7_6jznyyjw0000gn/T/fnm-shell-2279403/bin/yarn publish
 
 PATH: 
-  /Applications/Postgres.app/Contents/Versions/latest/bin:/Users/celsobonutti/Library/Android/sdk//cmdline-tools/latest/bin/:/Users/celsobonutti/Library/Android/sdk//emulator:/Users/celsobonutti/Library/Android/sdk//platform-tools:/Users/celsobonutti/.flutter-bin/bin:/var/folders/6y/_zsxmyz12rx9yy7_6jznyyjw0000gn/T/fnm-shell-5692534/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/celsobonutti/Library/Android/sdk//cmdline-tools/latest/bin/:/Users/celsobonutti/Library/Android/sdk//emulator:/Users/celsobonutti/Library/Android/sdk//platform-tools:/Users/celsobonutti/.flutter-bin/bin:/var/folders/6y/_zsxmyz12rx9yy7_6jznyyjw0000gn/T/fnm-shell-8883416/bin
+  /Users/celsobonutti/.cargo/bin/:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/celsobonutti/Library/Android/sdk//cmdline-tools/latest/bin/:/Users/celsobonutti/Library/Android/sdk//emulator:/Users/celsobonutti/Library/Android/sdk//platform-tools:/Users/celsobonutti/.flutter-bin/bin:/var/folders/6y/_zsxmyz12rx9yy7_6jznyyjw0000gn/T/fnm-shell-2279403/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/usr/local/go/bin:/Users/celsobonutti/.cargo/bin/:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/celsobonutti/Library/Android/sdk//cmdline-tools/latest/bin/:/Users/celsobonutti/Library/Android/sdk//emulator:/Users/celsobonutti/Library/Android/sdk//platform-tools:/Users/celsobonutti/.flutter-bin/bin:/var/folders/6y/_zsxmyz12rx9yy7_6jznyyjw0000gn/T/fnm-shell-9645924/bin
 
 Yarn version: 
   1.22.4
@@ -14,23 +14,23 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: canceled
-      at Interface.<anonymous> (/Users/celsobonutti/.fnm/node-versions/v10.19.0/installation/lib/node_modules/yarn/lib/cli.js:137008:13)
-      at Interface.emit (events.js:198:13)
-      at Interface._ttyWrite (readline.js:801:16)
-      at ReadStream.onkeypress (readline.js:184:10)
-      at ReadStream.emit (events.js:198:13)
-      at emitKeys (internal/readline.js:424:14)
-      at emitKeys.next (<anonymous>)
-      at ReadStream.onData (readline.js:1073:36)
-      at ReadStream.emit (events.js:198:13)
-      at addChunk (_stream_readable.js:288:12)
+  Error: https://registry.yarnpkg.com/-/user/token/33e77c5e-a546-4ab9-b3c8-00a8fcfca714: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (/Users/celsobonutti/.fnm/node-versions/v10.19.0/installation/lib/node_modules/yarn/lib/cli.js:141375:19)
+      at Object.onceWrapper (events.js:286:20)
+      at ClientRequest.emit (events.js:198:13)
+      at TLSSocket.emitRequestTimeout (_http_client.js:673:40)
+      at Object.onceWrapper (events.js:286:20)
+      at TLSSocket.emit (events.js:198:13)
+      at TLSSocket.Socket._onTimeout (net.js:443:8)
+      at ontimeout (timers.js:436:11)
+      at tryOnTimeout (timers.js:300:5)
+      at listOnTimeout (timers.js:263:5)
 
 npm manifest: 
   {
     "name": "re-sail",
-    "version": "0.0.1",
-    "description": "A simple navigation created for reason-react-native. Uses Variants for routing.",
+    "version": "0.1.2",
+    "description": "A simple variant-based navigation lib created for reason-react-native.",
     "main": "index.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
