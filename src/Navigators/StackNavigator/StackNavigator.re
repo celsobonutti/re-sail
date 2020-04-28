@@ -44,16 +44,15 @@ module Navigator = {
 
     let children =
       <View style=Style.(viewStyle(~flex=1., ~width=100.->pct, ()))>
-          {state.navigationStack
-           ->Belt_List.mapWithIndex((index, routeVariant) => {
-               let route = renderFunction(routeVariant);
-               let display = index == 0 ? `flex : `none;
-               <View style=Style.(style(~display, ()))>
-                 {route.component}
-               </View>;
-             })
-           ->Array.of_list
-           ->React.array}
+        {state.navigationStack
+         ->Belt_List.reverse
+         ->Belt_List.mapWithIndex((index, routeVariant) => {
+             let route = renderFunction(routeVariant);
+             let length = state.navigationStack->List.length;
+             <StackContainer index length> {route.component} </StackContainer>;
+           })
+         ->Array.of_list
+         ->React.array}
       </View>;
 
     React.createElement(
